@@ -1,0 +1,22 @@
+{
+                    
+    "name"          : "html-table-of-contents",
+    "version"       : "0.1.1",
+    "main"          : "./src/html-table-of-contents.js",
+    "description"   : "Generates a table of contents for your document based on the headings present.",
+    "keywords"      : ["html", "typesetting", "atropa"],
+    "homepage"      : "https://github.com/matthewkastor/html-table-of-contents/",
+    "bugs"          : "https://github.com/matthewkastor/html-table-of-contents/issues",
+    "author"        : {
+                        "name"      : "Matthew Kastor",
+                        "email"     : "matthewkastor@gmail.com",
+                        "url"       : "https://plus.google.com/100898583798552211130"
+    },
+    "repository"    : {
+                        "type"      : "git",
+                        "url"       : "git://github.com/matthewkastor/html-table-of-contents.git"
+    },
+    "engines"       : {
+                        "node"      : ">=0.8.14"
+    }
+}
