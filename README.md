@@ -1,6 +1,7 @@
 #html-table-of-contents
 
-Generates a table of contents for your document based on the headings present.
+Generates a table of contents for your HTML document based on the headings 
+present.
 
 ## Where do I get it?
 

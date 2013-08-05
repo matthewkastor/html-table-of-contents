@@ -3,7 +3,7 @@
     "name"          : "html-table-of-contents",
     "version"       : "0.1.1",
     "main"          : "./src/html-table-of-contents.js",
-    "description"   : "Generates a table of contents for your document based on the headings present.",
+    "description"   : "Generates a table of contents for your HTML document based on the headings present.",
     "keywords"      : ["html", "typesetting", "atropa"],
     "homepage"      : "https://github.com/matthewkastor/html-table-of-contents/",
     "bugs"          : "https://github.com/matthewkastor/html-table-of-contents/issues",
