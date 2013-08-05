@@ -27,7 +27,8 @@ to get an idea of how to access the table of contents entries if you wish to
 create your own stylesheet.
 
 If you're using this module outside of a browser you will have to supply a 
-reference to a dom document object, unless you've called it `document`. I did 
+reference to a dom document object, unless you've called it `document` or 
+have neglected to declare your document object globally. I did 
 not require any specific module for parsing the DOM, because there are a few 
 out there and it would be rude of me to force you to use a specific one for 
 such a simple function.
@@ -44,7 +45,9 @@ such a simple function.
         <script src="./node_modules/html-table-of-contents/src/html-table-of-contents.js"
               type="text/javascript">
 </script>
-        <link rel="stylesheet" type="text/css" href="./node_modules/html-table-of-contents/html-table-of-contents.css" />
+        <link rel="stylesheet"
+            type="text/css"
+            href="./node_modules/html-table-of-contents/html-table-of-contents.css" />
     </head>
     <body onload="htmlTableOfContents();">
         <p>
@@ -79,7 +82,7 @@ var fs = require('fs');
 var jsdom = require("jsdom").jsdom;
 var htmlTableOfContents = require('html-table-of-contents');
 
-var html = fs.readFileSync('html-table-of-contents.html', 'utf8');
+var html = fs.readFileSync('example.html', 'utf8');
 // javascript written for the browser expects global
 // window and document objects
 var document = global.document = jsdom(html, null, {
@@ -91,9 +94,15 @@ var document = global.document = jsdom(html, null, {
 var window = global.window = global.document.parentWindow;
 
 htmlTableOfContents();
+// alternatively, if you've called the 
+// document object something other than 
+// document, you may supply it as the 
+// first argument and everything will 
+// work out fine.
+// htmlTableOfContents(nonstandardDocumentReference);
 
 console.log(document.documentElement.innerHTML);
 
-
-// Shazam. The document now contains a table of contents you didn't have to write.
+// Shazam. The document now contains a table of 
+// contents you didn't have to write.
 ```
