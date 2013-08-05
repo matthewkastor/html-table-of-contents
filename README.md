@@ -28,11 +28,10 @@ to get an idea of how to access the table of contents entries if you wish to
 create your own stylesheet.
 
 If you're using this module outside of a browser you will have to supply a 
-reference to a dom document object, unless you've called it `document` and 
-have declared your document object globally. I did 
-not require any specific module for parsing the DOM, because there are a few 
-out there and it would be rude of me to force you to use a specific one for 
-such a simple function.
+reference to a dom document object, unless you've called it `document` 
+and declared it globally. I did not require any specific module for parsing the 
+DOM, because there are a few out there and it would be rude of me to force you 
+to use a specific one for such a simple function.
 
 ### Generating a table of contents in Browser
 
