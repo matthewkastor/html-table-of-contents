@@ -1,4 +1,4 @@
-#html-table-of-contents
+# html-table-of-contents
 
 Generates a table of contents for your HTML document based on the headings 
 present.
